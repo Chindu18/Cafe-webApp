@@ -1,0 +1,151 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*for navbar design*/
+/* File: frontend/cafe/src/components/Navbar.css */
+.navbar{
+    height: 60px;
+    width: 100%;
+    background: #20040b6c;
+    box-shadow: 20px 4px 16px #AF9A86;
+    padding: 0 20px ;
+    backdrop-filter: blur(20px);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+/* for logo part */
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sevillana", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #E0E1DE;
+}
+/* for routes path */
+.items{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Arial', sans-serif; 
+}
+.items a{
+    color: #E0E1DE;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;     
+    transition: color 0.3s, background 0.3s, border-radius 0.3s;
+}
+.items a:hover {
+    color: #763E27;
+    background: rgba(255,255,255,0.6);
+    border-radius: 12px;
+    /* Removed letter-spacing and font-family change to prevent shifting */
+}
+/* for login and sign in */
+.login{
+    height: 100%;
+    display: flex;
+    justify-content:end;
+    gap: 6px;
+    padding-right:15px;
+    align-items: center;
+}
+.login button{
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: brown ;
+    color: white;
+}
+.login :nth-child(2){
+    background:none;
+    border: 1px solid brown;
+    color: whitesmoke;
+}
+.login :nth-child(1):hover{
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+    transition: 0.3s;
+}
+.login :nth-child(2):hover{
+    background-color: brown;
+    color: white;
+    transition: 0.3s;
+}
+    
+/* ----------------------------------------------- */
+
+
+/* for home page */
+
+.Home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #E0E1DE;
+   
+}
+.Home .home-content{
+    width: 37%;
+    height: 50%;
+    padding-left: 55px;
+}
+.Home .home-content :nth-child(1){
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    color: #ffffffa4;
+    margin-bottom: 0px;
+}
+.Home .home-content :nth-child(2){
+    font-size: 70px;
+    line-height: 1;
+    font-family: "Oswald", sans-serif;
+}
+.span{ 
+    color: #914F3F !important;
+    font-size: 70px !important;
+    letter-spacing: 21px;
+    text-transform: uppercase;
+}
+.Home .home-content :nth-child(3){
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-top:25px;
+    font-family:  sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-left:1px ;
+    color: #ffffffa4;
+}
+.Home .home-content :nth-child(4){
+    font-size: 15px;
+    font-weight: 500;
+    
+    font-family: sans-serif;
+    color: #914F3F;
+    padding: 8px 10px;
+    border-radius:4px;
+    border: none;
+}
+.Home .home-content :nth-child(4):hover{
+    background-color: #914F3F;
+    color: #E0E1DE;
+    transition: 0.3s;
+    cursor: pointer;
+}
