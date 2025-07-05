@@ -35,7 +35,7 @@
     justify-content: space-around;
     font-family: 'Arial', sans-serif; 
 }
-.items a{
+.items .a{
     color: #E0E1DE;
     text-decoration: none;
     padding: 10px;
@@ -43,22 +43,47 @@
     font-weight: bold;     
     transition: color 0.3s, background 0.3s, border-radius 0.3s;
 }
-.items a:hover {
+.items .b{
+    color: brown;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;     
+    transition: color 0.3s, background 0.3s, border-radius 0.3s;
+}
+.items .a:hover{
     color: #763E27;
+    transition: 0.3s;
     background: rgba(255,255,255,0.6);
     border-radius: 12px;
-    /* Removed letter-spacing and font-family change to prevent shifting */
+   
 }
+/* responsive navbar */
+@media (max-width: 768px) {
+    .logo{
+        font-size: 24px;
+        padding-right: 10px;
+    }
+    .items{
+       padding: 0px 10px;
+       
+    }
+    .items .a{
+        font-size: 12px; 
+    }
+}
+
+
 /* for login and sign in */
 .login{
     height: 100%;
     display: flex;
     justify-content:end;
     gap: 6px;
-    padding-right:15px;
+    padding: 0px 20px;
     align-items: center;
 }
-.login button{
+.login a{
     padding: 7px 10px;
     font-size: 13px;
     font-weight: bold;
@@ -67,23 +92,16 @@
     cursor: pointer;
     background-color: brown ;
     color: white;
+    text-decoration: none;
 }
-.login :nth-child(2){
-    background:none;
-    border: 1px solid brown;
-    color: whitesmoke;
-}
-.login :nth-child(1):hover{
+   
+.login a:hover{
     background-color: white;
     color: brown;
     border: 1px solid brown;
     transition: 0.3s;
 }
-.login :nth-child(2):hover{
-    background-color: brown;
-    color: white;
-    transition: 0.3s;
-}
+
     
 /* ----------------------------------------------- */
 
@@ -99,10 +117,13 @@
     color: #E0E1DE;
    
 }
+
 .Home .home-content{
     width: 37%;
     height: 50%;
     padding-left: 55px;
+    display: flex;
+    flex-direction: column;
 }
 .Home .home-content :nth-child(1){
     font-size: 17px;
@@ -136,7 +157,7 @@
 .Home .home-content :nth-child(4){
     font-size: 15px;
     font-weight: 500;
-    
+    width: 150px;
     font-family: sans-serif;
     color: #914F3F;
     padding: 8px 10px;

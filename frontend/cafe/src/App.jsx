@@ -1,4 +1,4 @@
-import Navbar from './components/navbar.jsx'
+import Navbar from './components/layout/Navbar.jsx'
 import './App.css'
 import Home from './components/Home.jsx'
 
@@ -7,6 +7,7 @@ const App = () => {
     <div className='Full-App'>
         <Navbar/>
         <Home/> 
+      
     </div>
   )
 }
